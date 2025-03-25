@@ -1,1 +1,13 @@
-# PWC
+### PWC
+
+## **Predicting Term Deposit Subscription: Structured Summary**  
+
+Customer acquisition and retention are critical for banks, and predicting whether a customer will subscribe to a **term deposit** can optimize marketing strategies. This project focuses on **evaluating a phone marketing algorithm** for a bank to determine which customers are most likely to subscribe. The importance of this project lies in **reducing marketing costs, improving targeting efficiency, and increasing subscription rates**, ultimately maximizing the bank’s revenue and customer engagement.  
+
+The dataset consists of **41,188 records** with **20 features**, covering **customer demographics, previous marketing interactions, economic indicators, and campaign details**. Key attributes include **age, job type, education, previous campaign outcomes, and financial metrics**. The target variable ("y") indicates whether a customer subscribed to a term deposit. **EDA revealed an imbalanced dataset**, with only **10% of customers subscribing** and **90% declining**. Features such as **previous contact attempts, employment rate, and the economic confidence index** showed strong correlations with subscription likelihood.  
+
+For **data preprocessing and feature engineering**, missing values were handled, categorical variables were **encoded (label encoding, one-hot encoding)**, and numerical features were **scaled**. Notable transformations included **creating a binary indicator for previous contact ("pdays"), encoding categorical variables like job type and marital status, and dropping highly correlated variables** to prevent redundancy. Feature scaling was applied after splitting the dataset to avoid data leakage.  
+
+A **Logistic Regression model** was chosen due to its **interpretability and effectiveness for binary classification problems**. Cross-validation was performed, achieving **100% accuracy on both training and test sets**, indicating potential overfitting. The model's evaluation metrics included **precision, recall, F1-score, and a confusion matrix**, confirming the effectiveness of the classification. Feature importance analysis revealed that **previous contacts, employment rate, and economic conditions** were the strongest predictors of customer subscription.  
+
+From a **business perspective**, this model enables banks to **optimize their marketing strategy by targeting high-potential customers**, reducing unnecessary calls, and improving conversion rates. Key insights suggest that **maintaining regular contact, targeting retired individuals, and reaching customers at the right economic conditions** significantly influence subscription likelihood. The findings can guide **better decision-making in customer outreach, campaign structuring, and marketing budget allocation**, ultimately leading to increased profitability and customer retention.
